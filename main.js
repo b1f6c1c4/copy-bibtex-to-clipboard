@@ -29,6 +29,7 @@ for (const obj of document.getElementsByClassName('gs_or_cit')) {
   };
   const el = document.createElement('a');
   el.innerText = 'CopyBibTeXToClipboard';
+  el.setAttribute('href', 'javascript:void(0)');
   el.addEventListener('click', go);
   obj.parentNode.insertBefore(el, obj);
 }
