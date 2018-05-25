@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Copy BibTeX To Clipboard",
+  "description": "Supports Google scholar only",
+  "version": "0.0.0",
+  "permissions": ["https://scholar.googleusercontent.com/"],
+  "content_scripts": [{
+    "matches": ["https://scholar.google.com/scholar*"],
+    "js": ["main.js"]
+  }]
+}
